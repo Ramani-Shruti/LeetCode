@@ -6,15 +6,14 @@ public class Solution {
         Array.Sort(result);
         int min;
         double r;
+        min = result.Length/2;
         if(result.Length%2 == 0)
         {
-            min = (result.Length/2) - 1 ;
-            r = result[min] + result[min + 1];
+            r = result[min -1] + result[min];
             r = r/2;
         }
         else
         {
-            min = (result.Length/2);
             if(min==result.Length)
             {
                 r = result[0];
