@@ -2,27 +2,19 @@ public class Solution
 {
     public int LengthOfLongestSubstring(string s)
     {
-        char[] arr = new char[s.Length];
+        int[] lastIndex = new int[128];
 
         int start = 0;
-        int count = 0;
         int maxLength = 0;
 
         for (int i = 0; i < s.Length; i++)
         {
-            bool found = false;
-
-            for (int j = start; j < i; j++)
+            if (lastIndex[s[i]] > start)
             {
-                if (arr[j] == s[i])
-                {
-                    found = true;
-                    start = j + 1;
-                    break;
-                }
+                start = lastIndex[s[i]];
             }
 
-            arr[i] = s[i];
+            lastIndex[s[i]] = i + 1;
 
             int length = i - start + 1;
 
