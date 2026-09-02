@@ -2,25 +2,30 @@ public class Solution
 {
     public int LengthOfLongestSubstring(string s)
     {
-        int[] lastIndex = new int[128];
-
         int start = 0;
         int maxLength = 0;
 
+        bool[] seen = new bool[128];
+
         for (int i = 0; i < s.Length; i++)
         {
-            if (lastIndex[s[i]] > start)
+            // Character already exists
+            while (seen[s[i]])
             {
-                start = lastIndex[s[i]];
+                seen[s[start]] = false;
+                start++;
             }
 
-            lastIndex[s[i]] = i + 1;
+            // Add current character
+            seen[s[i]] = true;
 
-            int length = i - start + 1;
+            // Calculate current substring length
+            int currentLength = i - start + 1;
 
-            if (length > maxLength)
+            // Update maximum
+            if (currentLength > maxLength)
             {
-                maxLength = length;
+                maxLength = currentLength;
             }
         }
 
