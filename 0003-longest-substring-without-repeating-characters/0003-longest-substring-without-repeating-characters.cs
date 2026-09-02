@@ -5,24 +5,19 @@ public class Solution
         int start = 0;
         int maxLength = 0;
 
-        bool[] seen = new bool[128];
+        Dictionary<char, int> lastIndex = new Dictionary<char, int>();
 
         for (int i = 0; i < s.Length; i++)
         {
-            // Character already exists
-            while (seen[s[i]])
+            if (lastIndex.ContainsKey(s[i]))
             {
-                seen[s[start]] = false;
-                start++;
+                start = Math.Max(start, lastIndex[s[i]] + 1);
             }
 
-            // Add current character
-            seen[s[i]] = true;
+            lastIndex[s[i]] = i;
 
-            // Calculate current substring length
             int currentLength = i - start + 1;
 
-            // Update maximum
             if (currentLength > maxLength)
             {
                 maxLength = currentLength;
