@@ -1,18 +1,29 @@
-public class Solution {
-    public int Reverse(int x) 
+public class Solution
+{
+    public int Reverse(int x)
     {
-        int n;
-        long  result = 0;
-        while(x != 0)
+        int result = 0;
+
+        while (x != 0)
         {
-            n = x%10;
-            x = x/10;
-            result = (n + result) * 10;
-            if(result <= int.MinValue * 10L || result >= int.MaxValue * 10L)
+            int n = x % 10;
+            x /= 10;
+
+            if (result > int.MaxValue / 10 ||
+                (result == int.MaxValue / 10 && n > 7))
             {
                 return 0;
             }
+
+            if (result < int.MinValue / 10 ||
+                (result == int.MinValue / 10 && n < -8))
+            {
+                return 0;
+            }
+
+            result = result * 10 + n;
         }
-        return (int)(result/10);
+
+        return result;
     }
 }
