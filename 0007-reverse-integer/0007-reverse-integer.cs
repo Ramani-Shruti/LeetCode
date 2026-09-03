@@ -2,27 +2,16 @@ public class Solution
 {
     public int Reverse(int x)
     {
-        int result = 0;
+        long result = 0;
 
         while (x != 0)
         {
-            int digit = x % 10;
+            result = result * 10 + x % 10;
             x /= 10;
-
-            // Check overflow before result * 10 + digit
-            if (result > int.MaxValue / 10 ||
-                result < int.MinValue / 10)
-                return 0;
-
-            if (result == int.MaxValue / 10 && digit > 7)
-                return 0;
-
-            if (result == int.MinValue / 10 && digit < -8)
-                return 0;
-
-            result = result * 10 + digit;
         }
 
-        return result;
+        return result < int.MinValue || result > int.MaxValue
+            ? 0
+            : (int)result;
     }
 }
