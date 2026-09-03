@@ -9,15 +9,10 @@ public class Solution
             int digit = x % 10;
             x /= 10;
 
-            // Check overflow before result * 10 + digit
-            if (result > int.MaxValue / 10 ||
-                result < int.MinValue / 10)
+            if (result > int.MaxValue / 10 || (result == int.MaxValue / 10 && digit > 7))
                 return 0;
 
-            if (result == int.MaxValue / 10 && digit > 7)
-                return 0;
-
-            if (result == int.MinValue / 10 && digit < -8)
+            if (result < int.MinValue / 10 || (result == int.MinValue / 10 && digit < -8))
                 return 0;
 
             result = result * 10 + digit;
