@@ -7,7 +7,7 @@ class Solution {
             int currentSum = numbers[start] + numbers[end];
             if(currentSum == target)
             {
-                return new int[] {start + 1 ,end + 1}  ;
+                break;
 
             }else if(currentSum<target){
                 start ++;
@@ -16,7 +16,7 @@ class Solution {
                 end--;
             }   
         }
-        return new int [] {};
+        return new int [] {start + 1 ,end + 1};
 
     }
 }
