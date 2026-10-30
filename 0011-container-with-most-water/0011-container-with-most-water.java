@@ -12,11 +12,12 @@ class Solution {
             {
                 maxArea = area;
             }
-            if(height[l] < height[r])
+            while(l<r && height[l] <= h)
             {
                 l++;
             }
-            else{
+            while(l<r && height[r] <= h)
+            {
                 r--;
             }
         }
