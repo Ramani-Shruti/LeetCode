@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Ramani-Shruti/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
+| [0011-container-with-most-water](https://github.com/Ramani-Shruti/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Ramani-Shruti/LeetCode/tree/master/0015-3sum) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ramani-Shruti/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Binary Search
@@ -36,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Ramani-Shruti/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Ramani-Shruti/LeetCode/tree/master/0015-3sum) |
 | [0125-valid-palindrome](https://github.com/Ramani-Shruti/LeetCode/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ramani-Shruti/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -43,4 +45,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Ramani-Shruti/LeetCode/tree/master/0015-3sum) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/Ramani-Shruti/LeetCode/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
