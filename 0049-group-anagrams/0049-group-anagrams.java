@@ -2,11 +2,6 @@ class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();
         HashMap<String,List<String>> map = new HashMap<>();
-        if(strs.length == 1)
-        {
-            result.add(Arrays.asList(strs[0]));
-            return result;
-        }
         for(int i =0;i<strs.length;i++)
         {
             int[] count = new int[26];
@@ -16,15 +11,7 @@ class Solution {
                 count[strs[i].charAt(k) - 'a']++;
             }
             String key = Arrays.toString(count);
-            if(map.containsKey(key))
-            {
-                map.get(key).add(strs[i]);
-            }
-            else
-            {
-                map.put(key,new ArrayList<>());
-                map.get(key).add(strs[i]);
-            }
+            map.computeIfAbsent(key, k -> new ArrayList<>()).add(strs[i]);
         }
         result.addAll(map.values());
         return result;
