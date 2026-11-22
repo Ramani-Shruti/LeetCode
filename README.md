@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ramani-Shruti/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0238-product-of-array-except-self](https://github.com/Ramani-Shruti/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/Ramani-Shruti/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0724-find-pivot-index](https://github.com/Ramani-Shruti/LeetCode/tree/master/0724-find-pivot-index) |
 ## Binary Search
 |  |
 | ------- |
@@ -107,4 +108,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Ramani-Shruti/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0724-find-pivot-index](https://github.com/Ramani-Shruti/LeetCode/tree/master/0724-find-pivot-index) |
 <!---LeetCode Topics End-->
