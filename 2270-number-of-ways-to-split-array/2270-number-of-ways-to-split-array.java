@@ -6,16 +6,12 @@ class Solution {
             sum+=n;
         }
         int  count = 0;
-        long  p = nums[0];
-        for(int i=1;i<nums.length;i++)
+        long  p = 0;
+        for(int i=0;i<nums.length-1;i++)
         {
-            long  s = sum - p;
-            if(p >= s)
-            {
-                count++;
-            }
-
             p+=nums[i];
+            if(p >= sum - p)
+                count++;
         }
         return count;
     }
