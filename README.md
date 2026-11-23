@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0523-continuous-subarray-sum](https://github.com/Ramani-Shruti/LeetCode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Ramani-Shruti/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/Ramani-Shruti/LeetCode/tree/master/0724-find-pivot-index) |
+| [2270-number-of-ways-to-split-array](https://github.com/Ramani-Shruti/LeetCode/tree/master/2270-number-of-ways-to-split-array) |
 ## Binary Search
 |  |
 | ------- |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0523-continuous-subarray-sum](https://github.com/Ramani-Shruti/LeetCode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Ramani-Shruti/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/Ramani-Shruti/LeetCode/tree/master/0724-find-pivot-index) |
+| [2270-number-of-ways-to-split-array](https://github.com/Ramani-Shruti/LeetCode/tree/master/2270-number-of-ways-to-split-array) |
 ## Pigeonhole Principle
 |  |
 | ------- |
